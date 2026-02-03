@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atul Kumar Singh | Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @layer base {
+            body {
+                @apply bg-slate-50 text-slate-900 font-sans;
+            }
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed top-0 w-full z-50 glass">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                Atul Singh
+            </a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-6 py-4 space-y-4">
+            <a href="#about" class="block">About</a>
+            <a href="#skills" class="block">Skills</a>
+            <a href="#projects" class="block">Projects</a>
+            <a href="#contact" class="block">Contact</a>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 space-y-6">
+                <h2 class="text-blue-600 font-semibold tracking-wide uppercase">Full Stack Developer</h2>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 leading-tight">
+                    Hi, I'm <span class="text-indigo-600">Atul</span> Kumar Singh
+                </h1>
+                <p class="text-lg text-slate-600 max-w-lg">
+                    A Passionate developer specializing in Java, Spring Boot, and React. Focused on building high-performance, scalable applications with a keen eye for backend efficiency.
+                </p>
+                <div class="flex items-center gap-4">
+                    <a href="#contact" class="px-8 py-3 bg-indigo-600 text-white rounded-full font-semibold hover:bg-indigo-700 transition shadow-lg shadow-indigo-200">Get in Touch</a>
+                    <div class="flex gap-4 text-2xl">
+                        <a href="https://github.com/AtulSingh11-0" target="_blank" class="text-slate-600 hover:text-black transition"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/atul-singhll" target="_blank" class="text-slate-600 hover:text-blue-700 transition"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition duration-500">
+                    <img src="https://github.com/AtulSingh11-0.png" alt="Atul Kumar Singh" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/illustrations/a-drawing-of-a-man-wearing-a-tie-7EbR-jFH7cI'">
+                </div>
+                <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-100 rounded-full -z-10"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-slate-100 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <h3 class="text-3xl font-bold">Education</h3>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                        <h4 class="text-xl font-bold text-indigo-600">Bachelor of Computer Applications</h4>
+                        <p class="text-slate-700 font-medium">Meghnad Saha Institute Of Technology</p>
+                        <p class="text-slate-500 italic">Aug. 2022 — July 2025</p>
+                        <div class="mt-4 flex items-center gap-2">
+                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-bold">CGPA: 7.40/10</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-3xl font-bold">Experience</h3>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                        <h4 class="text-xl font-bold text-indigo-600">Backend Developer</h4>
+                        <p class="text-slate-700 font-medium">Megatronix (MSIT Techfest)</p>
+                        <p class="text-slate-500 italic">August 2023 — Present</p>
+                        <ul class="mt-4 space-y-2 text-slate-600 text-sm list-disc pl-4">
+                            <li>Managed registration for 3,000+ attendees for PARIDHI.</li>
+                            <li>Implemented streamlined auth processes for 500+ daily registrations.</li>
+                            <li>Led sessions on Competitive Programming and AI frameworks.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Technical Toolkit</h2>
+            <div class="h-1 w-20 bg-indigo-600 mx-auto"></div>
+        </div>
+        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="p-6 bg-white rounded-xl shadow-sm border border-slate-100 hover:border-indigo-300 transition">
+                <h4 class="font-bold text-slate-900 mb-4 flex items-center gap-2"><i class="fa-solid fa-code text-blue-500"></i> Languages</h4>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2 py-1 bg-slate-100 text-xs rounded font-medium">Java</span>
+                    <span class="px-2 py-1 bg-slate-100 text-xs rounded font-medium">JavaScript</span>
+                    <span class="px-2 py-1 bg-slate-100 text-xs rounded font-medium">Python</span>
+                    <span class="px-2 py-1 bg-slate-100 text-xs rounded font-medium">C</span>
+                    <span class="px-2 py-1 bg-slate-100 text-xs rounded font-medium">SQL</span>
+                </div>
+            </div>
+            <div class="p-6 bg-white rounded-xl shadow-sm border border-slate-100 hover:border-indigo-300 transition">
+                <h4 class="font-bold text-slate-900 mb-4 flex items-center gap-2"><i class="fa-solid fa-layer-group text-indigo-500"></i> Frameworks</h4>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2 py-1 bg-slate-100 text-xs rounded font-medium">Spring Boot</span>
+                    <span class="px-2 py-1 bg-slate-100 text-xs rounded font-medium">React</span>
+                    <span class="px-2 py-1 bg-slate-100 text-xs rounded font-medium">Node.js</span>
+                    <span class="px-2 py-1 bg-slate-100 text-xs rounded font-medium">Express</span>
+                </div>
+            </div>
+            <div class="p-6 bg-white rounded-xl shadow-sm border border-slate-100 hover:border-indigo-300 transition">
+                <h4 class="font-bold text-slate-900 mb-4 flex items-center gap-2"><i class="fa-solid fa-database text-green-500"></i> Databases</h4>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2 py-1 bg-slate-100 text-xs rounded font-medium">MySQL</span>
+                    <span class="px-2 py-1 bg-slate-100 text-xs rounded font-medium">PostgreSQL</span>
+                    <span class="px-2 py-1 bg-slate-100 text-xs rounded font-medium">MongoDB</span>
+                </div>
+            </div>
+            <div class="p-6 bg-white rounded-xl shadow-sm border border-slate-100 hover:border-indigo-300 transition">
+                <h4 class="font-bold text-slate-900 mb-4 flex items-center gap-2"><i class="fa-solid fa-cloud text-purple-500"></i> DevOps/Tools</h4>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2 py-1 bg-slate-100 text-xs rounded font-medium">Docker</span>
+                    <span class="px-2 py-1 bg-slate-100 text-xs rounded font-medium">Git</span>
+                    <span class="px-2 py-1 bg-slate-100 text-xs rounded font-medium">Postman</span>
+                    <span class="px-2 py-1 bg-slate-100 text-xs rounded font-medium">Vercel</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-slate-900 text-white px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 flex flex-col">
+                    <div class="p-6 flex-1">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-blue-400">Paridhi Portal 2025</h3>
+                            <span class="text-xs text-slate-400">2025</span>
+                        </div>
+                        <p class="text-slate-300 text-sm mb-6">High-performance tech-fest portal with 98% faster API response times and secure RBAC via JWT.</p>
+                        <ul class="text-xs text-slate-400 space-y-2 mb-6">
+                            <li><i class="fa-solid fa-bolt text-yellow-500 mr-2"></i> Latency reduced to 6-36ms</li>
+                            <li><i class="fa-solid fa-shield text-blue-500 mr-2"></i> Dockerized & Secure</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-2 py-1 bg-slate-700 rounded text-[10px]">Java</span>
+                            <span class="px-2 py-1 bg-slate-700 rounded text-[10px]">Spring Boot</span>
+                            <span class="px-2 py-1 bg-slate-700 rounded text-[10px]">MySQL</span>
+                            <span class="px-2 py-1 bg-slate-700 rounded text-[10px]">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 flex flex-col">
+                    <div class="p-6 flex-1">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-indigo-400">Anonymous Blog App</h3>
+                            <span class="text-xs text-slate-400">2026</span>
+                        </div>
+                        <p class="text-slate-300 text-sm mb-6">AI-driven blogging platform featuring Gemini SDK for summarization and semantic search.</p>
+                        <ul class="text-xs text-slate-400 space-y-2 mb-6">
+                            <li><i class="fa-solid fa-brain text-purple-500 mr-2"></i> AI Post Summarization</li>
+                            <li><i class="fa-solid fa-server text-green-500 mr-2"></i> Appwrite Backend</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-2 py-1 bg-slate-700 rounded text-[10px]">React</span>
+                            <span class="px-2 py-1 bg-slate-700 rounded text-[10px]">Redux</span>
+                            <span class="px-2 py-1 bg-slate-700 rounded text-[10px]">Appwrite</span>
+                            <span class="px-2 py-1 bg-slate-700 rounded text-[10px]">Gemini SDK</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 flex flex-col">
+                    <div class="p-6 flex-1">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-emerald-400">Real-time Chat App</h3>
+                            <span class="text-xs text-slate-400">2024</span>
+                        </div>
+                        <p class="text-slate-300 text-sm mb-6">WebSocket messaging system supporting 50+ concurrent users with efficient data retrieval.</p>
+                        <ul class="text-xs text-slate-400 space-y-2 mb-6">
+                            <li><i class="fa-solid fa-message text-emerald-500 mr-2"></i> 80ms Latency Reduction</li>
+                            <li><i class="fa-solid fa-database text-amber-500 mr-2"></i> Indexed MongoDB</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-2 py-1 bg-slate-700 rounded text-[10px]">Node.js</span>
+                            <span class="px-2 py-1 bg-slate-700 rounded text-[10px]">Express</span>
+                            <span class="px-2 py-1 bg-slate-700 rounded text-[10px]">Socket.io</span>
+                            <span class="px-2 py-1 bg-slate-700 rounded text-[10px]">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Get In Touch</h2>
+            <p class="text-slate-600 mb-12">I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="mailto:cocatulll@gmail.com" class="p-6 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition group">
+                    <i class="fa-solid fa-envelope text-3xl text-indigo-600 mb-4 group-hover:scale-110 transition"></i>
+                    <p class="font-bold">Email</p>
+                    <p class="text-sm text-slate-500">cocatulll@gmail.com</p>
+                </a>
+                <a href="tel:+919123766255" class="p-6 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition group">
+                    <i class="fa-solid fa-phone text-3xl text-green-600 mb-4 group-hover:scale-110 transition"></i>
+                    <p class="font-bold">Phone</p>
+                    <p class="text-sm text-slate-500">+91-9123766255</p>
+                </a>
+                <a href="https://linkedin.com/in/atul-singhll" target="_blank" class="p-6 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition group">
+                    <i class="fa-brands fa-linkedin text-3xl text-blue-600 mb-4 group-hover:scale-110 transition"></i>
+                    <p class="font-bold">LinkedIn</p>
+                    <p class="text-sm text-slate-500">atul-singhll</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 border-t border-slate-200 text-center text-slate-500 text-sm">
+        <p>&copy; 2024 Atul Kumar Singh. Built with Tailwind CSS.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
